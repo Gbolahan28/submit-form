@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Open+Sans&family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Submit Form</title>
+</head>
+<body>
+    <h1>
+        Contact Us
+    </h1>
+    <main>
+    <form action="/" method="GET">
+        
+        <section>
+            <h2>How can we help you?</h2>
+            <ul>
+                <li>
+                    <label for="userName">Your Name</label>
+                    <input type="text" placeholder=" Your names" name="text-name" required id="userName">
+                </li>
+                <li>
+                    <label for="email">Your E-mail Address</label>
+                    <input type="email" placeholder="Your email" name="text-email" required id="email">
+                </li>
+                <li>
+                    <label for="phone">Your Phone Number</label>
+                    <input type="phone" name="number" id="phone" minlength="11" required>
+                </li>
+            </ul>
+        </section>
+
+        
+        <section>
+            <label for="userMessage">Your message</label>
+            <textarea name="user-message" rows="6" id="userMessage"></textarea>
+        </section>
+
+<section>
+    <label for="chanel">How did you find us?</label>
+    <select name="chanel" id="chanel">
+        <option value="search">Web Search</option>
+        <option value="word-of-mouth">Word of Mouth</option>
+        <option value="other">Others</option>
+    </select>
+</section>
+
+
+
+<section>
+<h2>How should we reply?</h2>
+<ul>
+    <li class="form-control">
+        <input type="radio" name="verification" id="text-message" value="message">
+        <label for="text-message">Call me</label>
+    </li>
+    <li class="form-control">
+        <input type="radio" name="verification" id="phone-call" value="call">
+        <label for="phone-call">Send me an email</label>
+    </li>
+    <li class="form-control">
+        <input type="radio" name="verification" id="via-email" value="mail">
+        <label for="via-email">Don't reply</label>
+    </li>
+</ul>
+</section>
+
+
+
+<section>
+    <div class="form-control">
+        <input type="checkbox" id="terms" name="term-agreement" required> 
+        <label for="terms">Agree to terms</label>
+    </div>
+</section>
+
+<section id="form-button">
+    <button class="btn-empty" type="reset">
+        Clear
+    </button>
+    <button class="btn-filled" type="submit">
+        Submit
+    </button>
+</section>
+</form>
+</main>
+</body>
+</html>
